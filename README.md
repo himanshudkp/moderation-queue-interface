@@ -35,10 +35,16 @@ A fast, modern moderation dashboard built using **React**, **Redux Toolkit**, an
 
 ---
 
+## 🧪 Mock Data
+
+This project uses mock post data for development and testing purposes.
+
+You can find the mock data in the following file: 📁 src/data/mockPosts.ts
+
 ## 📦 Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [pnpm](https://pnpm.io/) (v8+ recommended)
+- [Node.js](https://nodejs.org/) v22.17.0
+- [pnpm](https://pnpm.io/) 10.12.1
 - Git
 
 ---
@@ -47,22 +53,119 @@ A fast, modern moderation dashboard built using **React**, **Redux Toolkit**, an
 
 Clone the repository and install dependencies:
 
-```bash
-git clone https://github.com/your-username/post-moderation-dashboard.git
-cd post-moderation-dashboard
+\`\`\`bash
+git clone https://github.com/himanshudkp/moderation-queue-interface.git
+cd moderation-queue-interface
 pnpm install
-```
+\`\`\`
 
-▶️ Running Locally
+---
+
+## ▶️ Running Locally
+
 Start the Vite dev server:
 
-bash
-Copy
-Edit
+\`\`\`bash
 pnpm dev
+\`\`\`
+
 Then open your browser at:
 
-arduino
-Copy
-Edit
+\`\`\`
 http://localhost:5173
+\`\`\`
+
+---
+
+## 🔨 Live
+
+To create an optimized build:
+
+\`\`\`
+http://localhost:5173
+\`\`\`
+
+---
+
+## 🗃️ Project Structure
+
+\`\`\`
+├── src
+│ ├── assets
+│ ├── components
+│ │ ├── BulkActionBar.tsx
+│ │ ├── ConfirmDialog.tsx
+│ │ ├── ErrorPage.tsx
+│ │ ├── FilterButtons.tsx
+│ │ ├── NoPosts.tsx
+│ │ ├── PostRow.tsx
+│ │ ├── SkeletonRow.tsx
+│ │ ├── SkeletonTable.tsx
+│ │ ├── TableHeader.tsx
+│ │ └── ViewPostDialog.tsx
+│ ├── data
+│ │ └── mockPosts.ts # 👉 Mock post data lives here
+│ ├── hooks
+│ │ ├── useActionTimeouts.ts
+│ │ ├── useConfirmationDialog.ts
+│ │ ├── useDialogState.ts
+│ │ ├── useInfiniteScroll.ts
+│ │ └── useKeyboardShortcuts.tsx
+│ ├── pages
+│ │ └── ModerationQueue.tsx
+│ ├── selectors
+│ │ └── postsSelectors.ts
+│ ├── slices
+│ │ └── postsSlice.ts
+│ ├── store
+│ │ └── store.ts
+│ ├── types.ts
+│ ├── utils
+│ │ └── utils.ts
+│ ├── App.tsx
+│ ├── index.css
+│ ├── main.tsx
+│ └── vite-env.d.ts
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts # Vite configuration
+\`\`\`
+
+---
+
+## 🧠 Architecture Notes
+
+- Global post state and selection logic handled using Redux Toolkit
+- Custom hooks for scroll detection, keyboard shortcuts, modals, confirmations
+- Undo logic using setTimeout with toast notifications via Sonner
+- Post detail modal with keyboard navigation
+- Infinite scroll via scroll event tracking
+
+## ✅ Checklist
+
+- [x] Vite + React setup
+- [x] Tailwind configured
+- [x] Redux Toolkit slices and selectors
+- [x] Modal and confirmation dialog
+- [x] Infinite scroll
+- [x] Bulk actions
+- [x] Undo action support
+- [x] Keyboard shortcut navigation
+
+---
+
+## 📌 TODO
+
+- [ ] Add unit + integration tests
+- [ ] Add backend/API integration (currently mocked)
+- [ ] Accessibility & focus trap improvements
+- [ ] Add animations via Framer Motion
+- [ ] Add localization (i18n) support
+
+---
