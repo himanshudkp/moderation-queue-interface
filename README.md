@@ -2,6 +2,8 @@
 
 A fast, modern moderation dashboard built using **React**, **Redux Toolkit**, and **Tailwind CSS**, powered by **Vite**. Designed for high-performance workflows like bulk moderation, keyboard navigation, undo functionality, and infinite scroll.
 
+- Live: [https://himanshudkp.github.io/moderation-queue-interface/]
+
 ---
 
 ## ⚙️ Tech Stack
