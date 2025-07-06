@@ -55,11 +55,11 @@ You can find the mock data in the following file: 📁 src/data/mockPosts.ts
 
 Clone the repository and install dependencies:
 
-\`\`\`bash
+```bash
 git clone https://github.com/himanshudkp/moderation-queue-interface.git
 cd moderation-queue-interface
 pnpm install
-\`\`\`
+```
 
 ---
 
@@ -67,31 +67,17 @@ pnpm install
 
 Start the Vite dev server:
 
-\`\`\`bash
+```bash
 pnpm dev
-\`\`\`
+```
 
 Then open your browser at:
 
-\`\`\`
-http://localhost:5173
-\`\`\`
-
----
-
-## 🔨 Live
-
-To create an optimized build:
-
-\`\`\`
-http://localhost:5173
-\`\`\`
-
----
+[http://localhost:5173]
 
 ## 🗃️ Project Structure
 
-\`\`\`
+````bash
 ├── src
 │ ├── assets
 │ ├── components
@@ -137,7 +123,7 @@ http://localhost:5173
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts # Vite configuration
-\`\`\`
+```
 
 ---
 
@@ -159,15 +145,4 @@ http://localhost:5173
 - [x] Bulk actions
 - [x] Undo action support
 - [x] Keyboard shortcut navigation
-
----
-
-## 📌 TODO
-
-- [ ] Add unit + integration tests
-- [ ] Add backend/API integration (currently mocked)
-- [ ] Accessibility & focus trap improvements
-- [ ] Add animations via Framer Motion
-- [ ] Add localization (i18n) support
-
----
+````
